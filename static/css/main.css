@@ -13,10 +13,9 @@
 @media (prefers-color-scheme: light) {
     :root {
         color-scheme: light;
-        --background: #ffffff;
         --text: #42444a;
-        --link: #0d88d8;
-        --link-hover: #101115;
+        --link: rgba(162, 136, 166);
+        --link-hover: rgba(162, 136, 166);
         --accent-1: #f6f6f6;
         --accent-2: #e2e2e4;
         --accent-3: #84868b;
@@ -27,9 +26,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
-        --background: #20232a;
         --text: #f7f7f7;
-        --link: #45c8f7;
+        --link: rgba(162, 136, 166);
         --link-hover: #ffffff;
         --accent-1: #3d4149;
         --accent-2: #53565d;
@@ -321,6 +319,24 @@ pre code {
     white-space: pre;
 }
 
+/*my additions*/
+/* .photoDuo ul{
+  list-style-type: none;
+}
+
+.photoDuo li:first-child{
+  float:left;
+}
+
+.photoDuo li:first-child{
+  float:right;
+} */
+
+
+
+/*my additions end*/
+
+
 div.highlight pre {
     background-color: #000 !important;
 }
@@ -412,7 +428,7 @@ textarea:focus {
 main {
     margin: 0 auto;
     max-width: var(--site-width);
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .header {
@@ -433,7 +449,6 @@ main {
 }
 
 .site-title {
-    font-size: 1.6rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -455,9 +470,8 @@ main {
 
 .site-nav {
     align-items: center;
-    display: flex;
+    display: block;
     font-size: 1.6rem;
-    justify-content: space-between;
     margin: 0 auto;
     max-width: var(--header-width);
     padding: 0.75rem 2rem 0.5rem 2rem;
@@ -485,16 +499,14 @@ main {
 .nav-menu {
     align-items: center;
     display: flex;
-    justify-content: space-between;
 }
 
 .nav-item {
-    margin-left: 1.75rem;
+    margin: 0 1rem 0 1rem;
 }
 
 article {
     clear: both;
-    margin: 0 0 8rem 0;
     padding: 0;
 }
 
@@ -576,8 +588,6 @@ article video {
     display: block;
     height: auto;
     margin: 3rem auto;
-    width: 100%;
-    max-width: 100%;
 }
 
 article img.align-none {
@@ -1166,12 +1176,12 @@ div.e-content {
 
 .microblog_book {
     border-radius: 0;
-    margin: 2.4rem 0 0 2rem !important;
     border: 1px solid var(--accent-2);
     object-fit: contain;
-    float: right;
+    float: left;
     text-align: right;
     max-width: 7rem !important;
+    min-width: 150px;
 }
 
 div.e-content .microblog_book {
@@ -1193,12 +1203,16 @@ img.bookshelf__cover {
     }
 
     .site-title {
-        font-size: 1.8rem;
+        font-size: .6em;
     }
 
     .site-nav {
-        background: var(--background);
-        font-size: 2rem;
+    align-items: center;
+    display: block;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    max-width: var(--header-width);
+    padding: 0.75rem 2rem 0.5rem 2rem;
     }
 
     .site-nav ul {
@@ -1208,7 +1222,7 @@ img.bookshelf__cover {
     }
 
     .nav-menu {
-        background-color: var(--background);
+        background-color: rgba(162, 136, 166, .01);
         border-radius: 0;
         flex-direction: column;
         height: 100dvmax;
