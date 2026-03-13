@@ -1,3 +1,6 @@
+# SherahMnml 
+This is my customized microblog theme for [sherah.micro.blog](http://sherah.micro.blog).
+
 # mnml
 
 ![mnml](https://raw.githubusercontent.com/jimmitchell/mnml/main/icon.jpg)
